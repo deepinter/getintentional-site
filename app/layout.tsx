@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     default: "Intentional — Take control of your AI narrative",
     template: "%s | Intentional",
   },
-  description: "Built for comms leaders, Intentional is your AI to watch brand narratives, read between the lines, and respond in your voice. Backed by expertise. Helping your team work from insight, not instinct.",
+  description: "Intentional monitors what AI says about your brand, surfaces the gaps, and gives you the strategy and content to take control. Built for comms leaders.",
   keywords: [
     "Answer Engine Optimization",
     "AEO",
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
     url: siteUrl,
     siteName: "Intentional",
     title: "Intentional — Take control of your AI narrative",
-    description: "Your radar for what AI is saying about your brand — and your engine to change it.",
+    description: "Monitor what AI says about your organisation — and change it.",
     images: [
       {
         url: "/og-image.png",
@@ -67,7 +67,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Intentional — Take control of your AI narrative",
-    description: "Your radar for what AI is saying about your brand — and your engine to change it.",
+    description: "Monitor what AI says about your organisation — and change it.",
     images: ["/og-image.png"],
     creator: "@intentional_ai",
   },
