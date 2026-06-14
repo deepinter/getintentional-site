@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { DM_Serif_Text } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
@@ -12,6 +12,10 @@ const funnelDisplay = DM_Serif_Text({
 
 
 const siteUrl = "https://getintentional.ai";
+
+export const viewport: Viewport = {
+  themeColor: "#d4561d",
+};
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -32,7 +36,6 @@ export const metadata: Metadata = {
     "AI reputation management",
     "communications strategy",
   ],
-  themeColor: "#d4561d",
   appleWebApp: {
     capable: true,
     statusBarStyle: "black-translucent",
