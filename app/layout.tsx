@@ -54,7 +54,7 @@ export const metadata: Metadata = {
     url: siteUrl,
     siteName: "Intentional",
     title: "Intentional — Take control of your AI narrative",
-    description: "See what AI is saying about your brand. Then shape it.",
+    description: "See what AI is saying about your brand. Surface the gaps. Then shape it. Built for communications leaders.",
     images: [
       {
         url: "/og-image.png",
@@ -67,7 +67,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Intentional — Take control of your AI narrative",
-    description: "See what AI is saying about your brand. Then shape it.",
+    description: "See what AI is saying about your brand. Surface the gaps. Then shape it. Built for communications leaders.",
     images: ["/og-image.png"],
     creator: "@intentional_ai",
   },
