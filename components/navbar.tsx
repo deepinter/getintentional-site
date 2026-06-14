@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import { cn } from "@/lib/utils";
 import ThinkingDots from "@/components/ui/thinking-dots";
@@ -25,6 +26,7 @@ function ChevronRight({ className }: { className?: string }) {
 
 export default function Navbar() {
   const { openModal } = useModal();
+  const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const [hoveredLink, setHoveredLink] = useState<string | null>(null);
@@ -60,6 +62,7 @@ export default function Navbar() {
         )}>
           <a
             href="/"
+            onClick={pathname === "/" ? (e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: "smooth" }); } : undefined}
             onMouseEnter={() => setLogoHovered(true)}
             onMouseLeave={() => setLogoHovered(false)}
             className={cn(
