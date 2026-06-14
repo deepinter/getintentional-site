@@ -116,7 +116,7 @@ export default function InquireModal() {
             <FloatingField label="Email address"          name="email"    type="email" required />
             <FloatingField label="Organisation / business name" name="business" required />
             <FloatingField label="Website URL"            name="url" />
-            <FloatingField label="The issue you're facing" name="issue"  rows={2} required />
+            <FloatingField label="What's the narrative challenge you're facing?" name="issue" rows={2} required />
 
             <div className="pt-2 md:pt-4 space-y-3 md:space-y-4">
               <motion.button
