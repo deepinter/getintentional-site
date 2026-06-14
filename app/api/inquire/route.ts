@@ -17,7 +17,7 @@ export async function POST(req: NextRequest) {
 
   const { error } = await resend.emails.send({
     from: "Intentional <hello@getintentional.ai>",
-    to: "mike.harrison@deependable.com",
+    to: process.env.INQUIRY_EMAIL!,
     replyTo: email,
     subject: `New inquiry from ${name} — ${business}`,
     text: [
