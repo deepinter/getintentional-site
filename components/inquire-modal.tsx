@@ -55,13 +55,25 @@ export default function InquireModal() {
   const { isOpen, modalType } = useModal();
   const isInquire = modalType === "inquire" || modalType === "contact";
   const [submitHovered, setSubmitHovered] = useState(false);
+  const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const data = new FormData(e.currentTarget);
-    // Honeypot check — bots fill this, humans don't
     if (data.get("_honey")) return;
-    // TODO: wire to Resend
+
+    setStatus("sending");
+
+    try {
+      const res = await fetch("/api/inquire", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(Object.fromEntries(data)),
+      });
+      setStatus(res.ok ? "success" : "error");
+    } catch {
+      setStatus("error");
+    }
   };
 
   return (
@@ -79,7 +91,18 @@ export default function InquireModal() {
             Share a few details and we'll respond with how we can help.
           </p>
 
-          <form onSubmit={handleSubmit} className="space-y-4 md:space-y-8">
+          {status === "success" && (
+            <div className="py-8">
+              <p className="text-body font-display font-bold text-headline mb-2">Thank you.</p>
+              <p className="text-body text-stone-500">We'll be in touch shortly.</p>
+            </div>
+          )}
+
+          {status === "error" && (
+            <p className="text-body text-red-600 mb-4">Something went wrong — please try again or email us directly.</p>
+          )}
+
+          <form onSubmit={handleSubmit} className={cn("space-y-4 md:space-y-8", status === "success" && "hidden")}>
 
             {/* Honeypot — invisible to humans, attractive to bots */}
             <div
@@ -98,6 +121,7 @@ export default function InquireModal() {
             <div className="pt-2 md:pt-4 space-y-3 md:space-y-4">
               <motion.button
                 type="submit"
+                disabled={status === "sending"}
                 onMouseEnter={() => setSubmitHovered(true)}
                 onMouseLeave={() => setSubmitHovered(false)}
                 className="inline-flex items-baseline cursor-pointer border-none font-display font-bold text-sub rounded-full"
@@ -115,8 +139,8 @@ export default function InquireModal() {
                 }}
                 style={{ paddingLeft: "1.25em", paddingTop: "0.4em", paddingBottom: "0.4em", color: "#ffffff" }}
               >
-                Submit
-                <ThinkingDots isHovered={submitHovered} color="#ffffff" />
+                {status === "sending" ? "Sending" : "Submit"}
+                <ThinkingDots isHovered={submitHovered || status === "sending"} color="#ffffff" />
               </motion.button>
 
               <p className="text-small text-stone-400">
