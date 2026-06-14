@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { DM_Serif_Text } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import SchemaOrg from "@/components/schema-org";
 
@@ -10,7 +11,7 @@ const funnelDisplay = DM_Serif_Text({
 });
 
 
-const siteUrl = "https://intentional.ai";
+const siteUrl = "https://getintentional.ai";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -105,6 +106,12 @@ export default function RootLayout({
           Skip to content
         </a>
         {children}
+        <Script
+          defer
+          src="https://cloud.umami.is/script.js"
+          data-website-id="b38b1b4a-3ef7-449a-b434-3f8e6b95c50b"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );
