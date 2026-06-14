@@ -1,0 +1,46 @@
+# Intentional
+
+> Intentional is an AI-powered platform and service for communications leaders. We monitor what AI says about your organisation, surface where the narrative breaks down, and give you the strategy and content to change it.
+
+We work with a small number of clients at a time — purposeful organisations where reputation and narrative are strategically important. Every engagement starts with a deep conversation to surface your institutional knowledge.
+
+## What we do
+
+- [The platform](https://intentional.ai/#platform): Intentional monitors all major AI platforms — ChatGPT, Perplexity, Google AI Overviews, Claude, Gemini, and others — exploring your organisation the way a real audience would ask. When it detects a gap or opportunity, it drafts a response built on your institutional knowledge. You approve everything before it's published.
+- [Sector intelligence](https://intentional.ai/intelligence): We're investigating how AI represents international organisations to their key stakeholders — and where the narrative breaks down. Research across 12 purposeful organisations, 8 AI platforms, and ~150 conversations.
+
+## Platform
+
+**Look through AI's eyes.** Intentional gives you a live view of where you stand. Most organisations find a gap between what they say and what AI has absorbed. Closing that gap is valuable. Understanding why it exists is where your communications strategy gets smarter.
+
+**Speak in your voice.** When Intentional surfaces a problem or opportunity — a misrepresentation, a competitor gaining ground, or a space you should own — it drafts a response. Content built to shift how AI understands you. The same response also briefs your comms and content teams. Your knowledge. Your approval. Your voice.
+
+**Listen for what matters.** You get a short email alert when something needs your attention. Intentional tracks how AI's view of your organisation shifts as new content is published — not sentiment scores, the actual narrative moving.
+
+## Who we work with
+
+Purposeful organisations with something meaningful to communicate — typically mid-to-large, where reputation and narrative are strategically important. Communications leaders, PR directors, and brand strategists. We work with a small number of clients at a time, so every engagement gets our full attention.
+
+## Key concepts
+
+- **AI narrative monitoring**: Continuously tracking what AI models say about your organisation across all major platforms.
+- **Institutional knowledge**: The approved messaging, context, and expertise unique to your organisation — the foundation Intentional is trained on.
+- **Narrative drift**: The gradual divergence between your approved messaging and what AI models tell stakeholders about you.
+- **AEO / GEO**: Answer Engine Optimisation and Generative Engine Optimisation — the emerging disciplines for ensuring AI accurately represents your organisation. Intentional operates at this layer with a strategic communications layer on top.
+
+## Frequently asked questions
+
+- What is Intentional? A dedicated AI-powered platform and service for comms leaders. It monitors what AI says about your organisation, responds with content built on your institutional knowledge, and tracks how your narrative shifts — supported by strategic communications specialists.
+- How is this different from ChatGPT? ChatGPT tells you what AI knows about your organisation right now — once. Intentional is a continuous intelligence loop: monitor, surface, respond, track. Backed by communications expertise.
+- Why do I need this? Over 60% of search is now AI-generated. Your stakeholders aren't Googling you — they're asking ChatGPT. The organisations that act now, before narratives solidify, will be significantly harder to displace.
+- How does it work? Intentional monitors all major AI platforms from multiple angles, the way a real audience would ask. When it detects a gap, it drafts a response built on your institutional knowledge. You approve everything before it's published.
+- What's it like to use? Most people experience Intentional as a short email — what's shifted in your narrative, and what's already been drafted in response. You review the full draft on the platform, shape it if needed, and approve. It's published for AI to absorb.
+- Do I control everything? Yes. Monitoring and drafting is automated — but strategy and approval are always yours. Nothing goes out without your sign-off.
+- Who owns the content? You do — entirely. Your institutional knowledge stays yours, the content produced is yours, and nothing is shared outside your engagement.
+- How do we get started? With a conversation. We start by understanding your organisation — your audiences, your approved messaging, and what AI currently knows about you. Most clients are fully operational within a month.
+
+## Contact
+
+Inquire: https://intentional.ai/#inquire
+Website: https://intentional.ai
+Sector research: https://intentional.ai/intelligence
