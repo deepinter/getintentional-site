@@ -34,14 +34,24 @@ const BOT_STEPS = [
 
 export default function InfluenceIcon() {
   const [tooltipOpen, setTooltipOpen] = useState(false);
-  const triggerRef  = useRef<HTMLSpanElement>(null);
-  const closeTimer  = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const [panelScale, setPanelScale] = useState(1);
+  const outerRef      = useRef<HTMLDivElement>(null);
+  const triggerRef    = useRef<HTMLSpanElement>(null);
+  const closeTimer    = useRef<ReturnType<typeof setTimeout> | null>(null);
   const topBackSpans  = useRef<(HTMLSpanElement | null)[]>([null, null, null, null]);
   const botBackSpans  = useRef<(HTMLSpanElement | null)[]>([null, null, null, null]);
   const flapDivs      = useRef<(HTMLDivElement | null)[]>([null, null, null, null]);
   const flapSpans     = useRef<(HTMLSpanElement | null)[]>([null, null, null, null]);
   const panelsRef     = useRef<HTMLDivElement>(null);
   const chaosActive   = useRef([false, false, false]);
+
+  useEffect(() => {
+    // section has no padding; stickyBox is (viewport - 48px); icon adds 32px padding
+    const compute = () => setPanelScale(Math.min(1, (window.innerWidth - 80) / 360));
+    compute();
+    window.addEventListener('resize', compute);
+    return () => window.removeEventListener('resize', compute);
+  }, []);
 
   const openTooltip = () => {
     if (closeTimer.current) clearTimeout(closeTimer.current);
@@ -220,7 +230,7 @@ export default function InfluenceIcon() {
   };
 
   return (
-    <div className="w-full flex flex-col items-center justify-start gap-5" style={{ aspectRatio: "5 / 3", padding: "24px 16px 12px" }}>
+    <div ref={outerRef} className="w-full flex flex-col items-center justify-start gap-5" style={{ aspectRatio: "5 / 3", padding: "24px 16px 12px" }}>
       <style>{`
         @keyframes influenceGlow {
           0%, 100% { opacity: 0.5; }
@@ -229,7 +239,7 @@ export default function InfluenceIcon() {
       `}</style>
 
       {/* Panels row */}
-      <div ref={panelsRef} style={{ display: "flex", alignItems: "center", gap: 6, position: "relative", margin: "0 auto" }}>
+      <div ref={panelsRef} style={{ display: "flex", alignItems: "center", gap: 6, position: "relative", margin: "0 auto", zoom: panelScale }}>
 
         {/* Soft orange glow blob */}
         <div style={{
