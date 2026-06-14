@@ -198,7 +198,6 @@ textarea:focus-visible {
 
 .parallax-container {
   position: relative;
-  width: 100%;
   overflow: hidden;
 }
 

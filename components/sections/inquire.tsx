@@ -97,8 +97,8 @@ export default function Inquire() {
           </div>
 
           {/* Right: image (3 cols) + quote (3 cols) side by side */}
-          <div className="col-span-12 md:col-span-6 grid grid-cols-2 gap-6 items-center">
-            <div ref={imageColRef} id="parallaxBox" className="parallax-container w-full aspect-square rounded-full self-start">
+          <div className="col-span-12 md:col-span-6 grid grid-cols-1 md:grid-cols-2 gap-6 items-start md:items-center">
+            <div ref={imageColRef} id="parallaxBox" className="parallax-container w-1/2 md:w-full aspect-square rounded-full self-start">
               <img src="/team-photo.jpg" alt="Communications team" className="parallax-img" />
             </div>
             <div>
