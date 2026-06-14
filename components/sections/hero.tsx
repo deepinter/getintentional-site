@@ -60,7 +60,7 @@ className="absolute inset-0 w-full h-full object-cover object-center"
           </h1>
 
           <p className="speakable text-sub text-headline mb-10">
-            <span className="font-display font-bold">Intentional</span> is built for communications leaders who want AI working on their strategy — not just their content.
+            Built for comms leaders who want AI working on their strategy — not just their content.
           </p>
 
           <div className="flex items-center gap-6 flex-wrap">
