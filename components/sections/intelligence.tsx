@@ -119,7 +119,7 @@ export default function Intelligence() {
           </div>
 
           {/* Cover — right, starts at col 7 */}
-          <div className="col-span-10 col-start-2 md:col-span-6 md:col-start-7 order-2">
+          <div className="col-span-12 md:col-span-6 md:col-start-7 order-2">
             <ReportCover />
           </div>
 
