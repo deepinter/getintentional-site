@@ -134,7 +134,7 @@ export default function FAQ() {
                     >
                       <div className="overflow-hidden">
                         <div className="pb-7">
-                          <p className="text-body">{renderAnswer(faq, openModal)}</p>
+                          <p className="text-body">{renderAnswer(faq, () => openModal("inquire"))}</p>
                         </div>
                       </div>
                     </div>
