@@ -74,7 +74,7 @@ We're investigating how AI represents international organisations to their key s
 
 Over 60% of search is now AI-generated. Your stakeholders aren't Googling you — they're asking ChatGPT. And the answer they get depends on which platform, how they ask, and how deep they dig.
 
-Full research: https://intentional.ai/intelligence
+Full research: https://getintentional.ai/intelligence
 
 ---
 
@@ -132,6 +132,6 @@ With a conversation. We start by understanding your organisation — your audien
 
 Intentional is built by people who've spent their careers working with purposeful organisations.
 
-**Contact:** https://intentional.ai/#inquire
-**Website:** https://intentional.ai
-**Sector research:** https://intentional.ai/intelligence
+**Contact:** https://getintentional.ai/#inquire
+**Website:** https://getintentional.ai
+**Sector research:** https://getintentional.ai/intelligence

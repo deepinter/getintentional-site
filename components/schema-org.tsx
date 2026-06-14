@@ -1,16 +1,18 @@
+const siteUrl = "https://getintentional.ai";
+
 const organization = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  "@id": "https://intentional.ai/#organization",
+  "@id": `${siteUrl}/#organization`,
   "name": "Intentional",
-  "url": "https://intentional.ai",
-  "description": "Intentional is your radar for what AI is saying about your brand — and your engine to change it. A bespoke intelligence system paired with high-level consultancy for communications leaders.",
+  "url": siteUrl,
+  "description": "Intentional is an AI-powered platform and service for communications leaders. We monitor what AI says about your organisation, surface where the narrative breaks down, and give you the strategy and content to change it.",
   "knowsAbout": [
     "Answer Engine Optimization",
-    "AI Brand Monitoring",
-    "Narrative Intelligence",
-    "Algorithmic Consensus Management",
-    "Communications Strategy"
+    "AI Narrative Monitoring",
+    "Generative Engine Optimization",
+    "Communications Strategy",
+    "AI Brand Intelligence"
   ],
   "slogan": "Take control of your narrative. Get intentional with AI."
 };
@@ -18,50 +20,50 @@ const organization = {
 const website = {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  "@id": "https://intentional.ai/#website",
+  "@id": `${siteUrl}/#website`,
   "name": "Intentional",
-  "url": "https://intentional.ai",
-  "publisher": { "@id": "https://intentional.ai/#organization" }
+  "url": siteUrl,
+  "publisher": { "@id": `${siteUrl}/#organization` }
 };
 
 const service = {
   "@context": "https://schema.org",
   "@type": "Service",
-  "@id": "https://intentional.ai/#service",
-  "name": "Intentional AI Brand Intelligence",
-  "provider": { "@id": "https://intentional.ai/#organization" },
-  "serviceType": "Answer Engine Optimization",
-  "description": "Intentional monitors the exact sources training AI answer engines — editorial sites, forums, and data streams shaping AI consensus about your brand. We translate approved messaging into machine-readable formats that Answer Engines trust, and show you the direct link between deployed narratives and shifts in AI-generated sentiment.",
+  "@id": `${siteUrl}/#service`,
+  "name": "Intentional AI Narrative Intelligence",
+  "provider": { "@id": `${siteUrl}/#organization` },
+  "serviceType": "AI Narrative Monitoring and Communications Strategy",
+  "description": "Intentional monitors all major AI platforms — ChatGPT, Perplexity, Google AI Overviews, Claude, Gemini, and others — exploring your organisation the way a real audience would ask. When it detects a gap or opportunity, it drafts a response built on your institutional knowledge. You approve everything before it's published.",
   "audience": {
     "@type": "Audience",
-    "audienceType": "Communications leaders, PR professionals, brand strategists"
+    "audienceType": "Communications leaders, PR directors, brand strategists at purposeful organisations"
   },
   "hasOfferCatalog": {
     "@type": "OfferCatalog",
-    "name": "Intentional Services",
+    "name": "Intentional Platform",
     "itemListElement": [
       {
         "@type": "Offer",
         "itemOffered": {
           "@type": "Service",
-          "name": "The Strategic Radar",
-          "description": "Human-crafted intelligence briefings showing the intersection of what people are asking and what AI is answering about your brand."
+          "name": "Look through AI's eyes",
+          "description": "A live view of how AI currently represents your organisation across all major platforms — and where the gaps are."
         }
       },
       {
         "@type": "Offer",
         "itemOffered": {
           "@type": "Service",
-          "name": "The Execution Engine",
-          "description": "Translation of approved messaging into machine-readable formats that Answer Engines trust, with drafted counter-narratives and content recommendations."
+          "name": "Speak in your voice",
+          "description": "When Intentional surfaces a problem or opportunity, it drafts a response built on your institutional knowledge. Your approval before anything is published."
         }
       },
       {
         "@type": "Offer",
         "itemOffered": {
           "@type": "Service",
-          "name": "The Proof",
-          "description": "Direct measurement of the link between deployed narratives and shifts in AI-generated sentiment about your brand."
+          "name": "Listen for what matters",
+          "description": "Track how AI's view of your organisation shifts as new content is published. Short email alerts when something needs your attention."
         }
       }
     ]
@@ -71,26 +73,26 @@ const service = {
 const howTo = {
   "@context": "https://schema.org",
   "@type": "HowTo",
-  "name": "How Intentional Protects and Shapes Your Brand's AI Narrative",
-  "description": "Intentional operates as a closed loop: monitor, execute, and measure — keeping your brand's narrative accurate across AI answer engines.",
+  "name": "How Intentional Works",
+  "description": "Intentional operates as a continuous intelligence loop: monitor what AI says about you, draft a response built on your institutional knowledge, approve and publish, track the shift.",
   "step": [
     {
       "@type": "HowToStep",
       "position": 1,
-      "name": "The Strategic Radar — Know exactly where narratives are weak",
-      "text": "We monitor the exact sources training Answer Engines — the editorial sites, forums, and data streams shaping AI consensus about your brand. Human-crafted intelligence briefings delivered in the cadence you prefer show you the intersection of what people are asking and what AI is answering."
+      "name": "Look through AI's eyes",
+      "text": "Intentional monitors all major AI platforms from multiple angles, the way a real audience would ask. You get a live view of where you stand and where the gaps are."
     },
     {
       "@type": "HowToStep",
       "position": 2,
-      "name": "The Execution Engine — Change your leverage, not your workflow",
-      "text": "We translate your approved messaging into machine-readable formats that Answer Engines trust and prioritize. Drafted counter-narratives and content recommendations — always with executive approval before deployment. Zero-error framing for high-stakes brands."
+      "name": "Speak in your voice",
+      "text": "When a gap or opportunity is detected, Intentional drafts a structured response built on your institutional knowledge. You shape it, approve it, and decide what gets published."
     },
     {
       "@type": "HowToStep",
       "position": 3,
-      "name": "The Proof — Stop relying on vanity metrics",
-      "text": "We show you the direct link between deployed narratives and shifts in AI-generated sentiment about your brand. Actionable intelligence — not a dashboard you'll ignore. Track how your interventions move the algorithmic consensus in real time."
+      "name": "Listen for what matters",
+      "text": "Intentional tracks how AI's view of your organisation shifts as new content is published. You get a short email alert when something needs your attention."
     }
   ]
 };
@@ -101,50 +103,98 @@ const faqPage = {
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What exactly is Answer Engine Optimization (AEO)?",
+      "name": "What is Intentional?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "AEO is the practice of optimizing your brand's digital footprint so AI models — like ChatGPT, Perplexity, and Gemini — accurately represent you when answering user questions. Unlike SEO, which targets search rankings, AEO ensures algorithmic consensus aligns with your approved narrative."
+        "text": "Intentional is a dedicated AI-powered platform and service for comms leaders. The platform monitors what AI says about your organisation, responds with content built on your institutional knowledge, and tracks how your narrative shifts. You are supported by our team of strategic communications specialists, combining technology with comms expertise to keep your voice accurate and visible in an AI-first world."
       }
     },
     {
       "@type": "Question",
-      "name": "How is Intentional different from traditional PR monitoring?",
+      "name": "Can ChatGPT do this instead?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Traditional PR tools track what's already been published. Intentional monitors the sources training AI models — before they become part of the algorithmic consensus. We detect narrative drift early and help you intervene proactively."
+        "text": "ChatGPT will tell you what AI knows about your organisation right now. That's useful — once. Intentional is a different thing entirely: a continuous intelligence loop that monitors your narrative, surfaces what's shifting, and gives you the strategic response to act on it. Backed by communications expertise, it changes how your team works — moving from gut feel to insight-driven decisions. Less guessing. More impact."
       }
     },
     {
       "@type": "Question",
-      "name": "Do I need to change how my team works?",
+      "name": "Why do I need this?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No. Intentional integrates into your existing workflow. You receive intelligence briefings (not dashboards), review drafted content, and approve deployment. Your team stays in command."
+        "text": "AI answer engines are already where many of your audiences go first. They don't direct people to your content — they answer instead of it. Most communications strategies haven't caught up. The organisations that establish their AI presence now, before narratives solidify, will be significantly harder to displace."
       }
     },
     {
       "@type": "Question",
-      "name": "How quickly can we get started with Intentional?",
+      "name": "Is this the same as AEO/GEO?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "For qualified clients, onboarding takes 2–3 weeks. We start with a deep-dive on your brand, train the system on your approved messaging, and begin monitoring immediately."
+        "text": "AEO (Answer Engine Optimisation) and GEO (Generative Engine Optimisation) are the emerging disciplines for ensuring AI represents your organisation accurately. Intentional operates at this layer — but brings a strategic communications layer on top. It doesn't just optimise once; it monitors continuously, responds with content built on your institutional knowledge, and helps your team stay ahead of the narrative."
       }
     },
     {
       "@type": "Question",
-      "name": "What kind of results can we expect from Answer Engine Optimization?",
+      "name": "How does it work?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Clients typically see measurable improvement in AI-generated sentiment within 30–60 days of deploying optimized narratives. Exact timelines vary based on your brand's current digital footprint and the complexity of your sector."
+        "text": "Intentional monitors all major AI platforms — ChatGPT, Perplexity, Google AI Overviews, and Claude — exploring your topic from multiple angles, the way a real audience would ask. When it detects a gap or opportunity, it drafts a structured response built on your institutional knowledge. You approve everything before it's published."
       }
     },
     {
       "@type": "Question",
-      "name": "Is Intentional only for crisis management?",
+      "name": "What's it like to use?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No. While Intentional is highly effective during reputational threats, it's designed as a continuous intelligence system — not a reactive crisis tool. The goal is to secure algorithmic authority before issues arise."
+        "text": "Most people experience Intentional as a short email — what's shifted in your narrative, and what's already been drafted in response. From there, you go to the platform to review the full draft. A built-in AI chat helps you shape it further if you need to. When you're happy, you approve. It's published for AI to absorb. And your team has the intelligence to work from."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does it replace my team's skills?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Most communications teams aren't currently doing continuous AI monitoring, competitor narrative tracking, or systematic content-to-AI feedback loops — so there's no role to replace. Intentional fills that gap and hands the output to your team. The judgement, the approval, the voice stay with you."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What do we have control over?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Everything that matters. Monitoring and drafting is automated — but strategy and approval are always yours. When Intentional surfaces a problem or opportunity, it brings you a draft. You shape it, approve it, and decide what gets published. Nothing goes out without your sign-off."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Who owns the content?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You do — entirely. Your institutional knowledge stays yours, the content produced is yours, and nothing is used to train AI models or shared outside your engagement."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What results should I expect?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "In the short term, a live view of how AI currently represents you, where the gaps are, and what competitors are saying. Over time, measurable narrative shift: AI positioning your organisation more accurately, in your voice. We track this from day one, so the change is visible, not assumed."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Who do you work with?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Purposeful organisations with something meaningful to communicate — typically mid-to-large organisations where reputation and narrative are strategically important. We work with a small number of clients at a time, which means every engagement gets our full attention."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do we get started?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "With a conversation. We start by understanding your organisation — your audiences, your approved messaging, and what AI currently knows about you. From that we build your institutional memory — the knowledge base everything runs on. Most clients are fully operational within a month."
       }
     }
   ]
@@ -153,12 +203,12 @@ const faqPage = {
 const review = {
   "@context": "https://schema.org",
   "@type": "Review",
-  "itemReviewed": { "@id": "https://intentional.ai/#service" },
-  "reviewBody": "We saw how AI was talking about us and needed to act. Intentional gives us the infrastructure to stay ahead of the narrative. Now when the machine speaks, it speaks our truth.",
+  "itemReviewed": { "@id": `${siteUrl}/#service` },
+  "reviewBody": "Intentional is a great tool — not just to influence AI, but because it shows how our content shapes our audience's opinions. That's changed how we work.",
   "author": {
     "@type": "Person",
-    "jobTitle": "Head of Content",
-    "worksFor": { "@type": "Organization", "name": "Global brand" }
+    "jobTitle": "Head of Communications",
+    "worksFor": { "@type": "Organization", "name": "International organisation" }
   },
   "reviewRating": {
     "@type": "Rating",
@@ -170,12 +220,12 @@ const review = {
 const webPage = {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "@id": "https://intentional.ai/#webpage",
-  "url": "https://intentional.ai",
+  "@id": `${siteUrl}/#webpage`,
+  "url": siteUrl,
   "name": "Intentional — Take control of your AI narrative",
-  "isPartOf": { "@id": "https://intentional.ai/#website" },
-  "about": { "@id": "https://intentional.ai/#organization" },
-  "description": "Intentional is your radar for what AI is saying about your brand — and your engine to change it.",
+  "isPartOf": { "@id": `${siteUrl}/#website` },
+  "about": { "@id": `${siteUrl}/#organization` },
+  "description": "Intentional is built for communications leaders who want AI working on their strategy — not just their content.",
   "speakable": {
     "@type": "SpeakableSpecification",
     "cssSelector": ["h1", "h2", ".speakable"]

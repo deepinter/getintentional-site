@@ -6,8 +6,8 @@ We work with a small number of clients at a time — purposeful organisations wh
 
 ## What we do
 
-- [The platform](https://intentional.ai/#platform): Intentional monitors all major AI platforms — ChatGPT, Perplexity, Google AI Overviews, Claude, Gemini, and others — exploring your organisation the way a real audience would ask. When it detects a gap or opportunity, it drafts a response built on your institutional knowledge. You approve everything before it's published.
-- [Sector intelligence](https://intentional.ai/intelligence): We're investigating how AI represents international organisations to their key stakeholders — and where the narrative breaks down. Research across 12 purposeful organisations, 8 AI platforms, and ~150 conversations.
+- [The platform](https://getintentional.ai/#platform): Intentional monitors all major AI platforms — ChatGPT, Perplexity, Google AI Overviews, Claude, Gemini, and others — exploring your organisation the way a real audience would ask. When it detects a gap or opportunity, it drafts a response built on your institutional knowledge. You approve everything before it's published.
+- [Sector intelligence](https://getintentional.ai/intelligence): We're investigating how AI represents international organisations to their key stakeholders — and where the narrative breaks down. Research across 12 purposeful organisations, 8 AI platforms, and ~150 conversations.
 
 ## Platform
 
@@ -41,6 +41,6 @@ Purposeful organisations with something meaningful to communicate — typically 
 
 ## Contact
 
-Inquire: https://intentional.ai/#inquire
-Website: https://intentional.ai
-Sector research: https://intentional.ai/intelligence
+Inquire: https://getintentional.ai/#inquire
+Website: https://getintentional.ai
+Sector research: https://getintentional.ai/intelligence
