@@ -91,7 +91,7 @@ className="absolute inset-0 w-full h-full object-cover object-center"
           </motion.button>
           <a
             href="#intelligence"
-            className="font-sans text-body text-orange hover:text-orange/80 transition-colors"
+            className="font-sans text-body font-semibold text-orange hover:text-orange/80 transition-colors"
           >
             New research
           </a>
