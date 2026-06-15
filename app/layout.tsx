@@ -43,10 +43,14 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
+      { url: "/icon-192.png", type: "image/png", sizes: "192x192" },
+      { url: "/icon-512.png", type: "image/png", sizes: "512x512" },
       { url: "/intentional-icon.svg", type: "image/svg+xml" },
     ],
     apple: "/apple-touch-icon.png",
+    shortcut: "/icon-192.png",
   },
+  manifest: "/manifest.json",
   authors: [{ name: "Intentional", url: siteUrl }],
   creator: "Intentional",
   alternates: {
