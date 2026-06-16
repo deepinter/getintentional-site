@@ -431,6 +431,7 @@ Mobile is not an afterthought but several sections behave fundamentally differen
 - Don't load web fonts for system font stacks
 - Don't add font-weight or tracking classes to heading JSX — those come from `globals.css`
 - Don't start a new server with Bash — use `mcp__Claude_Preview__preview_start` with the `intentional-site` config in `.claude/launch.json`
+- **Don't create `middleware.ts`** — Next.js 16 deprecated middleware. The file is `proxy.ts` with a named `proxy` export (not `middleware`). The old name causes a build error and breaks the preview
 - Don't add `!important` to fight Tailwind — remove the conflicting Tailwind class instead and own the property in CSS
 - Don't clear inline styles to `''` in the needs animation functions — always set them explicitly in both `resetMobile()` and `resetDesktop()`
 - Don't re-add `md:mx-0` to the noise section desktop-background div — the margin is owned by CSS
