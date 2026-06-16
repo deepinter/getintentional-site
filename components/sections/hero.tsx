@@ -59,8 +59,8 @@ className="absolute inset-0 w-full h-full object-cover object-center"
             <span className="text-white">Get intentional with AI.</span>
           </h1>
 
-          <p className="speakable text-sub text-headline mb-10">
-            Built for comms leaders who want AI working on strategy as well as content.
+          <p className="speakable text-sub text-headline mb-10 constrain-32">
+            Built for comms leaders who want AI working on their strategy, as well as content.
           </p>
 
           <div className="flex items-center gap-6 flex-wrap">
