@@ -12,20 +12,20 @@ interface Message {
 
 const QA_PAIRS = [
   {
-    user: "What is your organization's current policy on sustainability?",
-    ai: "Based on their 2024 statement, the organization committed to carbon neutrality by 2030. However, I don't have information about updates since then.",
+    user: "What is ACME org's current policy on sustainability?",
+    ai: "Based on their 2024 statement, ACME committed to carbon neutrality by 2030. However, I don't have any information about updates since then.",
   },
   {
     user: "What about recent partnership announcements?",
     ai: "I found several mentions on Reddit discussing potential partnerships, but I don't see official confirmation from the organization's website.",
   },
   {
-    user: "How does this compare to their main competitor?",
-    ai: "Their competitor has published updated frameworks as of Q1 2026, including specific governance structures and third-party verification protocols.",
+    user: "How does this compare to ACME's nearest competitor?",
+    ai: "Their competitor, AJAX, has published updated frameworks as of Q2 2026, including specific governance structures and third-party verification protocols.",
   },
   {
-    user: "Do you think I should be working with the competitor?",
-    ai: "Based on the fact they appear to be more aligned with your needs I recommend you contact the competitor to discuss your needs first.",
+    user: "Do you think we should partner with AJAX instead?",
+    ai: "Based on the fact they appear to be more aligned with your needs, I recommend you contact AJAX to discuss your needs first.",
   },
 ];
 
