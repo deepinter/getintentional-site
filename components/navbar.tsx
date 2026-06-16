@@ -131,7 +131,7 @@ export default function Navbar() {
                 />
               )}
               <span className={cn(
-                "relative z-10 text-body font-sans font-light transition-colors",
+                "relative z-10 text-small font-sans transition-colors",
                 hoveredRight === "signin" ? "text-white" : scrolled ? "text-orange" : "text-white"
               )}>
                 Sign in
@@ -153,7 +153,7 @@ export default function Navbar() {
                 />
               )}
               <span className={cn(
-                "relative z-10 text-body font-sans font-light transition-colors inline-flex items-baseline",
+                "relative z-10 text-small font-sans transition-colors inline-flex items-baseline",
                 hoveredRight === "cta" ? "text-white" : scrolled ? "text-orange" : "text-white"
               )}>
                 Get Intentional
