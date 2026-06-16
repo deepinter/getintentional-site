@@ -119,7 +119,7 @@ export default function Navbar() {
             {/* Sign in */}
             <button
               onClick={() => openModal("signin")}
-              className="relative px-4 py-1.5 rounded-full"
+              className="relative px-4 py-1.5 rounded-full cursor-pointer"
               onMouseEnter={() => setHoveredRight("signin")}
             >
               {hoveredRight === "signin" && (
@@ -141,7 +141,7 @@ export default function Navbar() {
             {/* Get Intentional — opens modal */}
             <button
               onClick={() => openModal("inquire")}
-              className="relative px-4 py-1.5 rounded-full"
+              className="relative px-4 py-1.5 rounded-full cursor-pointer"
               onMouseEnter={() => setHoveredRight("cta")}
             >
               {hoveredRight === "cta" && (

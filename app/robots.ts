@@ -8,6 +8,6 @@ export default function robots(): MetadataRoute.Robots {
         allow: "/",
       },
     ],
-    sitemap: "https://intentional.ai/sitemap.xml",
+    sitemap: "https://getintentional.ai/sitemap.xml",
   };
 }

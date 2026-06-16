@@ -2,7 +2,7 @@
 
 ## What this is
 
-**Intentional** (intentional.ai) is a marketing site for an AI brand intelligence product for senior communications leaders. The positioning: Intentional monitors what AI says about your organisation, responds with content built on your institutional knowledge, and measures the narrative shift over time. It is built for comms professionals, not marketers or developers.
+**Intentional** (getintentional.ai) is a marketing site for an AI brand intelligence product for senior communications leaders. The positioning: Intentional monitors what AI says about your organisation, responds with content built on your institutional knowledge, and measures the narrative shift over time. It is built for comms professionals, not marketers or developers.
 
 The product does two things — and both must come through in the copy:
 1. **AI narrative** — monitors and responds to what AI says about your brand across answer engines
@@ -10,7 +10,7 @@ The product does two things — and both must come through in the copy:
 
 This dual value is the core differentiator. Don't narrow it back to AEO/GEO alone.
 
-This is a **Next.js App Router** site using **Tailwind v4**, deployed (eventually) to intentional.ai.
+This is a **Next.js App Router** site using **Tailwind v4**, deployed to getintentional.ai.
 
 ---
 
@@ -27,6 +27,13 @@ Small things done well. Hover states, transitions, scroll behaviour. These shoul
 
 ### One thing at a time
 Work in small, focused changes. Don't refactor while fixing. Don't add features while adjusting type. Mike will tell you what to change — don't anticipate or jump ahead.
+
+### Transitional awareness
+When a task feels complete and the conversation moves to a new issue, briefly consider whether the work just done has any unaddressed dependencies or platform-specific implications. If something stands out, flag it lightly before moving on — don't act on it unless asked.
+
+This is not a checklist, and it does not apply to every commit. It applies at moments of transition: when one issue is closed and another opens. The question is simply: is there anything related to the last task that hasn't been fully closed off?
+
+A concrete example: when setting up a favicon, SVG alone works in desktop Chrome but Android Chrome requires PNG icons and a web manifest. That implication wasn't flagged at the time and only surfaced when tested on a Samsung Galaxy. A brief note — "worth checking Android Chrome too" — would have caught it earlier.
 
 ---
 
@@ -450,7 +457,7 @@ Mobile is not an afterthought but several sections behave fundamentally differen
 - [ ] Update all SEO metadata copy once content finalised
 - [ ] Analytics: Umami (no cookies, no consent banner needed, GDPR compliant) — Mike to provide code snippet
 - [ ] 404 page
-- [ ] Deployment: Vercel, custom domain (intentional.ai), production env vars
+- [ ] Deployment: Vercel, custom domain (getintentional.ai), production env vars
 - [ ] Sitemap / robots review once content finalised
 - [ ] Sign-in modal: wire to real auth when platform is ready
 - [ ] Inquire modal: wire form submission to Resend
